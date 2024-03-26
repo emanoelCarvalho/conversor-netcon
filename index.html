@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="imagens/Captura de tela 2024-03-24 141722-Photoroom.png-Photoroom.jpeg">
+<title>Conversor Online</title>
+<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+<header>
+    <h1>CONVERSOR ANOS-LUZ/KM</h1>
+</header>
+<div class="background-image"></div>
+<nav>
+    <div class="nav-left">
+        <h1>Conversor Online</h1>
+    </div>
+    <div class="nav-right">
+        <span class="hand-cursor">LOGIN</span>
+        <span class="hand-cursor">LOGOUT</span>
+        <img src="imagens/Captura de tela 2024-03-24 142244-Photoroom.png-Photoroom.jpeg" alt="Logo" class="nav-logo">
+    </div>
+</nav>
+<aside class="hand-cursor">
+    <ul>
+        <li><button>Menu</button></li>
+        <li><button onclick="window.location.reload()">Página Inicial</button></li>
+        <li><button onclick="window.open('information.html')">Informações</button></li>
+    </ul>
+</aside>
+<div class="float-container">
+    <div class="float-box">
+        <h3>Converter KM para Anos Luz</h3>
+        <input id="kmToLightYearsInput" type="number" min="1" placeholder="Insira o valor em KM">
+        <button onclick="convertKMToLightYears()">CONVERTER</button>
+    </div>
+    <div class="float-box">
+        <h3>Converter Anos Luz para KM</h3>
+        <input id="lightYearsToKMInput" type="number" min="1" placeholder="Insira o valor em Anos Luz">
+        <button onclick="convertLightYearsToKM()">CONVERTER</button>
+    </div>
+</div>
+
+<div class="table-container">
+  <table id="conversionTable">
+      <thead>
+          <tr>
+              <th>Data da Medição</th>
+              <th>Valor em KM</th>
+              <th>Valor em Anos-Luz</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+  </table>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

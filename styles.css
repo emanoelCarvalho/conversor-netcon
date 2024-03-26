@@ -1,0 +1,176 @@
+.hand-cursor, .hand-cursor button {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  background-color: transparent;
+  color: white;
+  padding: 115px;
+  text-align: center;
+}
+
+nav {
+  background-color: #09527a;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 4px solid #ccc;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 4em; 
+  margin-right: 6px; 
+}
+
+.nav-title {
+  vertical-align: middle;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left h1, .nav-right span {
+  margin: 0; 
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-right span {
+  margin-left: 20px; 
+}
+
+aside {
+  background-color: #09527a;
+  padding: 20px;
+  position: fixed;
+  top: 97px; 
+  left: 0;
+  bottom: 0;
+  width: 130px;
+  overflow-y: auto;
+  border-right: 2px solid white;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+aside ul li button {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: #09527a;
+  width: 100%; 
+  transition: background-color 0.3s ease;
+}
+
+aside ul li button:hover {
+  background-color: #007bff; 
+}
+
+.float-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.float-box {
+  width: 50%;
+  background-color: #09527a;
+  color: white;
+  padding: 40px;
+  border-radius: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#conversionTable {
+  width: 50%; 
+  margin: 0 auto;
+  background-color: white;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#conversionTable th, #conversionTable td {
+  border: 1px solid #000;
+  padding: 6px;
+  text-align: center;
+  color: black;
+}
+
+#conversionTable th {
+  background-color: #f2f2f2;
+}
+
+#conversionTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.float-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.float-box input {
+  width: calc(100% - 5px);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.float-box button {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 70px;
+}
+
+/* Estilo para a imagem de fundo */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("imagens/vadim-sadovski-k14.jpeg");
+  background-size: cover;
+  z-index: -1;
+}
